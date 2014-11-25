@@ -13,7 +13,7 @@
   
 		return this.each(function(){
 			var $scope  = $(this);
-    
+    			$scope.addClass('is_active');
 			$scope.on('focus.flowupLabelsEvt', '.fl_input', function() {
 				$(this).closest('.fl_wrap').addClass(settings.class_focused);
 			})
